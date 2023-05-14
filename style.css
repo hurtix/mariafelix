@@ -9,12 +9,18 @@
 body {
   font-family:var(--typo-1);
   background-color: black;
-  max-width:100%;
+  max-width:414px;
+  margin: 0 auto;
   color: var(--blanco);
+  position: relative;
 }
 a {text-decoration: none;color:var(--color-2);}
 h1,h2,h3,h4,h5,h6 {color:var(--color-1);font-weight:bold;}
 
+.cuerpo {
+  background-color: black;
+  padding: 0 1em;
+}
 .descripcion {
   font-size: .85rem;
   font-weight: normal;
@@ -43,8 +49,31 @@ h1,h2,h3,h4,h5,h6 {color:var(--color-1);font-weight:bold;}
   content: '$';
   padding-right: .2em;
 }
-h1::before {
+h1 {line-height: 1em;}
+h1.deco::before {
   content: url(img/jalapenho.png);
   display: block;
   width: 100%;
+}
+.bottom-bar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--color-1);
+  padding: 0;
+  max-width: 414px;
+  text-align: center;
+}
+.bottom-bar .d-grid a:not(:last-child) {
+  border-right: 1px solid black;
+}
+.bottom-bar .d-grid a i {
+  padding-top: 1em;
+  line-height: 1em;
+  display: block;
+}
+.bottom-bar .d-grid a span {
+  padding-bottom: 1em;
+  line-height: 1em;
+  display: block;
 }
