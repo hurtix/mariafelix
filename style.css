@@ -1,6 +1,6 @@
 :root {
   --blanco:#fff;
-  --typo-1:'Oswald',Arial;
+  --typo-1:'Fira Sans Condensed',Arial;
   --typo-2:Arial;
   --color-1:#D81001;
   --color-2:#E0F11B;
@@ -18,4 +18,26 @@ h1,h2,h3,h4,h5,h6 {color:var(--color-1);font-weight:bold;}
 .descripcion {
   font-size: .85rem;
   font-weight: normal;
+}
+.item-producto .d-grid {
+  grid-template-columns: 75% 25%;
+  align-items: center;
+}
+.item-producto {
+  padding: 1em 0;
+  border-bottom: 1px solid rgba(255, 255, 255, .2);
+  line-height: 1.2em;
+}
+.item-titulo {
+  color: var(--color-2);
+  padding-bottom: 1em;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.item-precio {
+  text-align:right;
+}
+.item-precio::before {
+  content: '$';
+  padding-right: .2em;
 }
