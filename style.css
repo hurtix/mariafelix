@@ -27,6 +27,7 @@ h1,h2,h3,h4,h5,h6 {color:var(--color-1);font-weight:bold;}
   padding: 1em 0;
   border-bottom: 1px solid rgba(255, 255, 255, .2);
   line-height: 1.2em;
+  user-select:none;
 }
 .item-titulo {
   color: var(--color-2);
@@ -36,8 +37,14 @@ h1,h2,h3,h4,h5,h6 {color:var(--color-1);font-weight:bold;}
 }
 .item-precio {
   text-align:right;
+  padding-bottom: 1em;
 }
 .item-precio::before {
   content: '$';
   padding-right: .2em;
+}
+h1::before {
+  content: url(img/jalapenho.png);
+  display: block;
+  width: 100%;
 }
