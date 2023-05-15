@@ -121,6 +121,12 @@ img {
   font-weight: bold;
   text-transform: uppercase;
 }
+.swiper-button-next {
+  right: 3px !important;
+}
+.swiper-button-prev {
+  left: 3px !important;
+}
 .swiper-slide img {
   display: block;
   margin: 0 auto;
@@ -133,4 +139,11 @@ img {
 }
 .swiper-button-next, .swiper-button-prev {
   color: black !important;
+  background: var(--color-2);
+  border-radius: 50%;
+  padding: 0 1.3em !important;
+  border: 1px solid black;
+}
+.swiper-button-next::after, .swiper-button-prev::after {
+  font-size: 1rem !important;
 }

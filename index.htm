@@ -787,4 +787,23 @@
     },
   });
 </script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+        let anchorSelector = 'a[href^="#"]';
+     
+        $(anchorSelector).on('click', function (e) {
+            e.preventDefault();
+
+            let destination = $(this.hash);
+
+            let scrollPosition
+                = destination.offset().top;
+
+            let animationDuration = 500;
+
+            $('html, body').animate({
+                scrollTop: scrollPosition
+            }, animationDuration);
+        });
+</script>
 </html>
