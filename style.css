@@ -51,6 +51,9 @@ h1,h2,h3,h4,h5,h6 {color:var(--color-1);font-weight:bold;}
 h1 {line-height: 1em;}
 h1.deco {
   position: relative;
+  background-color: var(--color-1);
+  color: var(--color-2);
+  line-height: 1.25em;
 }
 /* h1.deco::before {
   content: '';
