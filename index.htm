@@ -5,34 +5,111 @@
   <title>Menu María Felix</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" -->
     crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
-    crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300;600&display=swap" rel="stylesheet"> 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300;600&display=swap" rel="stylesheet"> 
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" crossorigin="anonymous"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 </head>
 
 <body>
 <div class="cuerpo">
   <!-- Logo -->
-  <div class="container">  
+  <div id="logo" class="container">  
     <div class="row">
       <div class="col-md-12 col-sm-12">
         <img class="d-block mx-auto" src="img/logo_2.png" width="150px" alt="image">
       </div>
-    </div>
+  </div>
   </div>
   <!-- Fin Logo -->
 
+  <div class="top-bar container py-1">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 sticky">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#entradas">
+                <img src="img/icono/icono-1.svg" alt="icono" width="50">
+                Entradas
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#sopas">
+                <img src="img/icono/icono-2.svg" alt="icono" width="50">
+                Sopas
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#pa-taquiar">
+                <img src="img/icono/icono-3.svg" alt="icono" width="50">
+                Pa' taquiar
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#chimichangas">
+                <img src="img/icono/icono-4.svg" alt="icono" width="50">
+                Chimichangas
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#para-compartir">
+                <img src="img/icono/icono-5.svg" alt="icono" width="50">
+                Para compartir
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#tampiquenhas-burritos">
+                <img src="img/icono/icono-6.svg" alt="icono" width="50">
+                Tampiqueñas y burritos
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#quesadillas">
+                <img src="img/icono/icono-7.svg" alt="icono" width="50">
+                Quesadillas
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#para-los-chavitos">
+                <img src="img/icono/icono-8.svg" alt="icono" width="50">
+                Para los chavitos
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#postres">
+                <img src="img/icono/icono-9.svg" alt="icono" width="50">
+                Postres
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#bebidas">
+                <img src="img/icono/icono-10.svg" alt="icono" width="50">
+                Bebidas
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#menu-del-dia">
+                  <img src="img/icono/icono-11.svg" alt="icono" width="50">
+                Menú del día
+              </a>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- ENTRADAS -->
-  <div class="container">
+  <div id="entradas" class="container">
     <h1 class="text-center my-5 deco">ENTRADAS</h1>
     <div class="row">
       <div class="col-md-12 col-sm-12">
@@ -164,7 +241,7 @@
 
 <!-- SOPAS -->
 
-<div class="container user-select-none">
+<div id="sopas" class="container user-select-none">
   <h1 class="text-center my-5 deco">SOPAS</h1>
   <div class="row">
     <div class="col-md-12 col-sm-12">
@@ -204,7 +281,7 @@
 
 
 <!-- PA TAQUIAR-->
-<div class="container">
+<div id="pa-taquiar" class="container">
   <h1 class="text-center my-5 deco">PA' TAQUIAR!</h1>
   <div class="row">
     <div class="col-md-12 col-sm-12">
@@ -256,7 +333,7 @@
 <!-- FIN PA TAQUIAR-->
 
 <!-- CHIMICHANGAS -->
-<div class="container">
+<div id="chimighangas" class="container">
   <h1 class="text-center my-5 deco">CHIMICHANGAS</h1>
   <div class="row">
       <div class="col-md-12 col-sm-12">
@@ -289,7 +366,7 @@
 
 <!-- PARA COMPARTIR -->
 
-<div class="container">
+<div id="para-compartir" class="container">
   <h1 class="text-center my-5 deco">PARA COMPARTIR EN GRANDE!</h1>
   <div class="row">
       <div class="col-md-12 col-sm-12">
@@ -313,7 +390,7 @@
 <!-- FIN PARA COMPARTIR -->
 
 <!-- TAMPIQUEÑAS Y BURRITOS -->
-<div class="container">
+<div id="tampiquenhas-burritos" class="container">
   <h1 class="text-center my-5 deco">TAMPIQUEÑAS Y BURRITOS</h1>
   <div class="row">
       <div class="col-md-12 col-sm-12">
@@ -440,7 +517,7 @@
 <!-- FIN ADS -->
 
 <!-- QUESADILLAS -->
-<div class="container">
+<div id="quesadillas" class="container">
   <h1 class="text-center my-5 deco">QUESADILLAS</h1>
   <div class="row">
       <div class="col-md-12 col-sm-12">
@@ -527,7 +604,7 @@
 <!-- FIN QUESADILLAS -->
 
 <!-- PARA LOS CHAVITOS -->
-<div class="container">
+<div id="para-los-chavitos" class="container">
   <img class="d-block mx-auto mt-5" src="img/elChavo.png" alt="image" width="150">
   <h1 class="text-center mb-5">PARA LOS CHAVITOS</h1>
   <div class="row">
@@ -566,7 +643,7 @@
 <!-- FIN PARA LOS CHAVITOS -->
 
 <!-- POSTRES -->
-<div class="container">
+<div id="postres" class="container">
   <h1 class="text-center my-5 deco">POSTRES</h1>
   <div class="row">
       <div class="col-md-12 col-sm-12">
@@ -597,7 +674,7 @@
 <!-- FIN POSTRES -->
 
 <!-- BEBIDAS -->
-<div class="container">
+<div id="bebidas" class="container">
   <h1 class="text-center my-5 deco">BEBIDAS</h1>
   <div class="row">
       <div class="col-md-12 col-sm-12">
@@ -638,7 +715,7 @@
 <!-- FIN MENU DEL DIA -->
 
 
-  <div class="text-center">
+  <div id="menu-del-dia" class="text-center px-4">
     <h1 class="text-center my-5 deco">MENÚ DEL DÍA</h1>
     <div class="border py-3">
       <ul class="list-unstyled m-0 p-0 lead">
@@ -661,7 +738,8 @@
   <p>De 11:30am a 3:00pm y de 6:00pm a 9:40pm</p>
 </div>
 </div> <!-- Fin class .cuerpo -->
-<div class="bottom-bar">
+
+<!-- <div class="bottom-bar">
   <div class="d-grid" style="grid-template-columns: repeat(3,1fr);">
     <a href="#">
       <i class="fas fa-pepper-hot"></i>
@@ -677,7 +755,7 @@
     </a>
   </div>
 </div>
-</body>
+</body> -->
 
 <!-- <script>
   (function ($) {
@@ -694,4 +772,20 @@
   })(jQuery);
 </script>
 -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    loop: true,
+    slidesPerView: 4,
+    spaceBetween: 5,
+    // centeredSlides: true,
+    autoplay: {
+      delay: 3500,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
 </html>
