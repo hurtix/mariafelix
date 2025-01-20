@@ -255,15 +255,16 @@
 
   // Scroll suave
   let anchorSelector = 'a[href^="#"]';
-  $(anchorSelector).on('click', function (e) {
+$(anchorSelector).on('click', function (e) {
     e.preventDefault();
     let destination = $(this.hash);
-    let scrollPosition = destination.offset().top;
+    let offset = 100; // Offset de 100px
+    let scrollPosition = destination.offset().top - offset; // Restamos el offset
     let animationDuration = 500;
     $('html, body').animate({
-      scrollTop: scrollPosition
+        scrollTop: scrollPosition
     }, animationDuration);
-  });
+});
 </script>
 
 <!-- Script para cargar el menú -->
