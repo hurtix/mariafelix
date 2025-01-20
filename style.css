@@ -52,7 +52,7 @@ h1.deco {
   position: relative;
   background-color: var(--color-1);
   color: var(--color-2);
-  line-height: 1.25em;
+  line-height: 1em;
 }
 .top-bar {
   position: sticky;
